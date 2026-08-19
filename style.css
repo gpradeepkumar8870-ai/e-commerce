@@ -1,0 +1,81 @@
+:root {
+    --brand-primary: #1a5d3a;
+    --brand-primary-dark: #123f27;
+    --brand-accent: #e8a33d;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f7f7f5;
+}
+
+.shop-navbar {
+    background: linear-gradient(90deg, var(--brand-primary) 0%, var(--brand-primary-dark) 100%);
+}
+
+.shop-footer {
+    background-color: var(--brand-primary-dark);
+}
+
+.btn-brand {
+    background-color: var(--brand-primary);
+    border-color: var(--brand-primary);
+    color: #fff;
+}
+.btn-brand:hover {
+    background-color: var(--brand-primary-dark);
+    border-color: var(--brand-primary-dark);
+    color: #fff;
+}
+
+.text-brand { color: var(--brand-primary); }
+
+.product-card {
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    border: 1px solid #e9e9e6;
+    height: 100%;
+}
+.product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+.product-card .card-img-top {
+    height: 200px;
+    object-fit: contain;
+    background: #fff;
+    padding: 10px;
+}
+
+.badge-discount {
+    background-color: var(--brand-accent);
+    color: #23230f;
+}
+
+.price-strike {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 0.9rem;
+}
+
+.category-pill.active {
+    background-color: var(--brand-primary) !important;
+    color: #fff !important;
+}
+
+.rating-stars i { color: var(--brand-accent); }
+
+.hero-banner {
+    background: linear-gradient(120deg, var(--brand-primary) 0%, #2f7d52 100%);
+    color: #fff;
+    border-radius: 0.75rem;
+}
+
+.qty-form select { width: 90px; }
+
+.order-status-badge.pending { background-color: #6c757d; }
+.order-status-badge.processing { background-color: #0d6efd; }
+.order-status-badge.shipped { background-color: #6610f2; }
+.order-status-badge.delivered { background-color: #198754; }
+.order-status-badge.cancelled { background-color: #dc3545; }
