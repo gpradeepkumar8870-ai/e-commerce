@@ -1,0 +1,18 @@
+Django==4.2.16
+djangorestframework==3.15.2
+django-widget-tweaks==1.5.0
+PyMySQL==1.1.1
+Pillow==10.4.0
+
+# Uncomment to enable real Razorpay payments (see payments/views.py for live-mode code)
+# razorpay==1.4.2
+
+# Uncomment if you prefer the compiled MySQL driver instead of PyMySQL
+# (requires MySQL client dev headers to build):
+# mysqlclient==2.2.4
+
+# Production WSGI server (recommended for PythonAnywhere / AWS / Heroku deployment)
+gunicorn==22.0.0
+
+# Environment variable loader (optional, used if you create a .env file)
+python-dotenv==1.0.1
